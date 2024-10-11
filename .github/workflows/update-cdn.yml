@@ -1,0 +1,19 @@
+name: Update CDN Link
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-cdn:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Update CDN link
+        uses: jsdelivr/update-cdn@v1
+        with:
+          repo: Dinkeres/jstest
+          file: snake.js
+          cdn-link: https://cdn.jsdelivr.net/gh/Dinkeres/jstest@latest/snake.js
