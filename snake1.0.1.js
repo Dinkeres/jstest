@@ -98,7 +98,7 @@ function draw() {
 
 // Handle keyboard input
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'space' && direction !== 'left') {
+  if (e.key === 'D' && direction !== 'left') {
     direction = 'right';
   } else if (e.key === 'ArrowLeft' && direction !== 'right') {
     direction = 'left';
