@@ -111,3 +111,4 @@ document.addEventListener('keydown', (e) => {
 
 // Start the game
 draw();
+
