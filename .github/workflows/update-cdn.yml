@@ -16,4 +16,4 @@ jobs:
         with:
           repo: Dinkeres/jstest
           file: snake.js
-          cdn-link: https://cdn.jsdelivr.net/gh/Dinkeres/jstest@latest/snake.js
+          cdn-link: https://cdn.jsdelivr.net/gh/Dinkeres/jstest@main/snake.js
