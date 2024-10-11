@@ -1,3 +1,6 @@
+// script.js
+const version = '1.0.0';
+console.log(`Version: ${version}`);
 // Create the HTML canvas element
 const html = `
   <canvas id="canvas" width="400" height="400" style="border: 1px solid black;"></canvas>
