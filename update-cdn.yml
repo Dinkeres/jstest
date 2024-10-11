@@ -12,8 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Update CDN link
-        uses: jsdelivr/update-cdn@v1
-        with:
-          repo: Dinkeres/jstest
-          file: snake.js
-          cdn-link: https://cdn.jsdelivr.net/gh/Dinkeres/jstest@main/snake.js
+        run: |
+          curl -X POST \
+          https://api.jsdelivr.com/v1/package/gh/Dinkeres/jstest \
+          -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          -H 'Content-Type: application/json' \
+          -d '{"files":["snake.js"]}'
