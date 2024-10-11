@@ -33,7 +33,7 @@ let food = {
 // Define the game variables
 let score = 0;
 let direction = 'right';
-let speed = 10;
+let speed = 500;
 
 // Main game loop
 function draw() {
