@@ -101,7 +101,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'space' && direction !== 'left') {
     direction = 'right';
   } else if (e.key === 'ArrowLeft' && direction !== 'right') {
-    direction = 'space';
+    direction = 'left';
   } else if (e.key === 'ArrowUp' && direction !== 'down') {
     direction = 'up';
   } else if (e.key === 'ArrowDown' && direction !== 'up') {
