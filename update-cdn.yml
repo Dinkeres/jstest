@@ -1,4 +1,4 @@
-name: Update CDN Link
+name: Update jsDelivr CDN
 
 on:
   push:
@@ -13,8 +13,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Update CDN link
         run: |
-          curl -X POST \
-          https://api.jsdelivr.com/v1/package/gh/Dinkeres/jstest \
-          -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
-          -H 'Content-Type: application/json' \
-          -d '{"files":["snake.js"]}'
+          curl -X PURGE https://cdn.jsdelivr.net/gh/Dinkeres/jstest@main/snake.js
